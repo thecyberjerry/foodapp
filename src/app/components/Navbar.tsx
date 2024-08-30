@@ -5,6 +5,7 @@ import Button from './minicomponents/Button'
 import { Logo } from '../../../source/types'
 import { NavbarType } from './Hero'
 import Sidebar from './minicomponents/Sidebar'
+import Link from 'next/link'
 interface NavType extends Logo {
     navdata: NavbarType
 }
@@ -21,7 +22,7 @@ export default function Navbar({ navdata, logo }: NavType) {
             </div>
             <div className="nav__logo">
                 <div className="nav__img">
-                    {logo && <Image src={logo && logo?.src!} height={100} width={100} alt={logo && logo?.alt!} />}
+                    {logo && <Link href={logo && logo?.link!}><Image src={logo && logo?.src!} height={100} width={100} alt={logo && logo?.alt!} /></Link>}
                 </div>
             </div>
             <div className="nav__items">

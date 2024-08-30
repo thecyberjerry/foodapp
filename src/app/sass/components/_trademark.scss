@@ -35,6 +35,9 @@
       list-style-type: none;
       display: flex;
       gap: 0.938rem;
+      li {
+        cursor: pointer;
+      }
     }
   }
 

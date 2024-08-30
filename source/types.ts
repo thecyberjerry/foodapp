@@ -1,6 +1,7 @@
 interface ImageType {
   src?: string;
   alt?: string;
+  link?: string;
 }
 interface ButtonType {
   title?: string;
@@ -11,8 +12,7 @@ interface ButtonType {
 interface Text extends ButtonType {
   color?: string;
 }
-interface Logo 
-{
-  logo?:ImageType
+interface Logo {
+  logo?: ImageType;
 }
-export type { Text, ImageType, ButtonType,Logo };
+export type { Text, ImageType, ButtonType, Logo };
