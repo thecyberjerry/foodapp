@@ -54,7 +54,7 @@
   }
 
   &__inputbox {
-    width: 100%;
+    width: 100%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,9 +63,10 @@
 
   &__inputbtn {
     position: relative;
+    width: 100%; 
     input {
       border-radius: 1rem;
-      width: min-content;
+      width: 100%;
       background-color: $color-red-solid;
       border: transparent;
       padding: 1rem 1.5rem;
@@ -78,6 +79,7 @@
     }
     ::placeholder {
       opacity: 1;
+      color: $color-white;
     }
     button {
       position: absolute;
