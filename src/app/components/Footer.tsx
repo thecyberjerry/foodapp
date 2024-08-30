@@ -5,6 +5,7 @@ import Button from './minicomponents/Button'
 import Trademark from './minicomponents/Headings.tsx/Trademark'
 import Headingmedium from './minicomponents/Headings.tsx/Headingmedium'
 import { ButtonType, ImageType, Logo, Text } from '../../../source/types'
+import Link from 'next/link'
 type Lists = {
     label: Text
     list: Text[]
@@ -22,7 +23,7 @@ type FooterType = {
     btn: ButtonType
     trademark: TrademarkType
 }
-interface Footer extends Logo { 
+interface Footer extends Logo {
     footer: FooterType
 }
 export default function Footer({ footer, logo }: Footer) {
@@ -31,7 +32,7 @@ export default function Footer({ footer, logo }: Footer) {
             <div className="footer__wrapper">
                 <div className="footer__logo">
                     <div className="footer__img">
-                        {logo && <Image src={logo && logo?.src!} height={100} width={100} alt={logo && logo?.alt!} />}
+                        {logo && <Link href={logo && logo?.link!}><Image src={logo && logo?.src!} height={100} width={100} alt={logo && logo?.alt!} /></Link>}
                     </div>
                     {footer && footer?.paragraph && <Paragraph paragraph={footer?.paragraph} />}
                 </div>

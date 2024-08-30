@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Paragraph from '../Paragraph/Paragraph'
 import { ImageType, Text } from '../../../../../source/types'
+import Link from 'next/link'
 
 type TrademarkType = {
     paragraph: Text
@@ -18,8 +19,7 @@ export default function Trademark({ trademark }: Trademark) {
                 {trademark && trademark?.paragraph && <Paragraph paragraph={trademark?.paragraph} />}
                 <ul>
                     {trademark && trademark?.policylist && trademark?.policylist?.map((item, index) => {
-                        return (
-                            <li key={index}>{item.title}</li>
+                        return (<Link key={index} href={item && item.link!} ><li>{item.title}</li></Link>
                         )
                     })}
                 </ul>

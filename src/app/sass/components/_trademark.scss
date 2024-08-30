@@ -17,8 +17,9 @@
       display: flex;
       gap: 0.875rem;
       li {
-        text-decoration: underline;
-        cursor: pointer;
+        text-decoration: underline; 
+        color: $color-black;
+        opacity: 80%;
         font-weight: $font-weight-light;
         font-size: $font-size-extra-small;
         line-height: $line-height-extra-small;
