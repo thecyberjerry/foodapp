@@ -44,16 +44,15 @@ button {
   line-height: $line-height-caption;
   background-color: $color-red-solid;
   padding: 0.625rem 1.9rem;
-  color: $color-white;
-  height: auto;
   font-family: $font-poppins;
   border: transparent;
   border-radius: 0.5rem;
-  &:hover {
-    cursor: pointer;
-  }
+  transition: 0.2s;
   width: 10rem;
   text-wrap: nowrap;
+  &:hover { 
+    cursor: pointer;
+  }
 }
 li {
   font-weight: $font-weight-normal;

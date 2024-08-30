@@ -23,7 +23,7 @@ const hero = {
     { title: "Home", link: "/" },
     { title: "Home", link: "/" },
   ],
-  background:{src:"/assets/hero/hero.webp"}
+  background: { src: "/assets/hero/hero.webp" },
 };
 const aboutus = [
   {
@@ -107,6 +107,9 @@ const testimonial = {
         color: "red",
       },
       img: [
+        { src: "./assets/testimonial/star.svg", alt: "Some Image" },
+        { src: "./assets/testimonial/star.svg", alt: "Some Image" },
+        { src: "./assets/testimonial/star.svg", alt: "Some Image" },
         { src: "./assets/testimonial/star.svg", alt: "Some Image" },
         { src: "./assets/testimonial/star.svg", alt: "Some Image" },
       ],
