@@ -1,0 +1,27 @@
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__nav {
+    padding: 1rem 0rem;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 10rem 0rem;
+    width: 41.5rem;
+    p {
+      opacity: 80%;
+      margin: 0.5rem 0rem;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    &__text {
+      width: fit-content;
+    }
+
+    background-position: center;
+  }
+}

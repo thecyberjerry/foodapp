@@ -1,0 +1,20 @@
+.btn {
+  &--red {
+    background-color: $color-red-solid;
+  }
+  &--white {
+    background-color: $color-white;
+  }
+  &--textwhite {
+    color: $color-white;
+  }
+  &--textgreen {
+    color: $color-green-transparent;
+  }
+  &--textblack {
+    color: $color-black;
+  }
+  &--textred {
+    color: $color-red-solid;
+  }
+}

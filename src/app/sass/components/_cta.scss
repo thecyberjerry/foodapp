@@ -1,0 +1,30 @@
+.cta {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  margin-top: 9.5rem;
+  background-color: $color-red-solid;
+  text-align: center;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    p {
+      padding-top: 1rem;
+      padding-bottom: 2.25rem;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    gap: 2.563rem;
+  }
+
+  @media only screen and (max-width: 552px) {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    margin-top: 0rem;
+    &__btn {
+      gap: 0.438rem;
+    }
+  }
+}

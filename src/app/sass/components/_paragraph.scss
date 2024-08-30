@@ -1,0 +1,12 @@
+.paragraph {
+  &--white {
+    color: $color-white;
+  }
+  &--black {
+    color: $color-black;
+  }
+  &--green
+  {
+    color: $color-green-transparent;
+  }
+}

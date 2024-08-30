@@ -1,0 +1,12 @@
+.heading { 
+    &--white {
+      color: $color-white;
+    }
+    &--black {
+      color: $color-black;
+    }
+    &--red
+    {
+      color: $color-red-solid;
+    }
+}

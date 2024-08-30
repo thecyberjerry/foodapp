@@ -1,0 +1,146 @@
+.footer {
+  margin-top: 5.625rem;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__logo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    p {
+      font-size: $font-size-small;
+      line-height: $line-height-medium-small;
+      width: 62%;
+      opacity: 80%;
+    }
+  }
+
+  &__img {
+    width: fit-content;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+      li {
+        cursor: pointer;
+        width: fit-content;
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    ul {
+      li {
+        opacity: 80%;
+      }
+    }
+  }
+
+  &__inputbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__inputbtn {
+    position: relative;
+    input {
+      border-radius: 1rem;
+      width: min-content;
+      background-color: $color-red-solid;
+      border: transparent;
+      padding: 1rem 1.5rem;
+      color: $color-white;
+      font-family: var(--font-poppins);
+      font-size: $font-size-small;
+      &:focus {
+        outline: none;
+      }
+    }
+    ::placeholder {
+      opacity: 1;
+    }
+    button {
+      position: absolute;
+      right: 0.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5.313rem;
+      padding: 0.5rem 0.5rem;
+    }
+  }
+
+  &__trademark {
+    padding: 1.313rem 0rem 0rem 0rem;
+    margin-top: 2.375rem;
+    margin-bottom: 5.875rem;
+    text-align: center;
+    border-top: 2px solid $color-black;
+  }
+
+  @media only screen and (max-width: 992px) {
+    margin-top: 0rem;
+    padding: 1.75rem;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: fit-content;
+      text-align: center;
+    }
+
+    &__list {
+      justify-content: space-between;
+      ul {
+        align-items: center;
+        li {
+          font-weight: $font-weight-light;
+          font-size: $font-size-XX-small;
+          line-height: $line-height-XX-small;
+        }
+      }
+      h3 {
+        font-weight: $font-weight-semi-bold;
+        font-size: $font-size-medium-small;
+        line-height: $line-height-large-body;
+      }
+    }
+    &__logo {
+      p {
+        display: none;
+      }
+    }
+
+    &__wrapper {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    &__trademark {
+      margin-bottom: 0rem;
+    }
+
+    &__inputbox {
+      display: none;
+    }
+  }
+}

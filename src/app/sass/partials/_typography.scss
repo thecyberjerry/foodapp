@@ -1,0 +1,86 @@
+h1 {
+  font-weight: $font-weight-x-bold;
+  font-size: $font-size-large-hero;
+  font-family: $font-poppins;
+  line-height: $line-height-large-hero;
+}
+h2 {
+  font-weight: $font-weight-bold;
+  font-family: $font-poppins;
+  font-size: $font-size-hero;
+  line-height: $line-height-hero;
+}
+h3 {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+  font-family: $font-poppins;
+}
+h4 {
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-size-subheading;
+  font-family: $font-poppins;
+  line-height: $line-height-subheading;
+}
+h5 {
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-size-body;
+  line-height: $line-height-small;
+}
+h6 {
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-size-small;
+  line-height: $line-height-caption;
+}
+p {
+  font-weight: $font-weight-normal;
+  font-size: $font-size-body;
+  line-height: $line-height-subheading;
+  font-family: $font-poppins;
+}
+button {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-small;
+  line-height: $line-height-caption;
+  background-color: $color-red-solid;
+  padding: 0.625rem 1.9rem;
+  color: $color-white;
+  height: auto;
+  font-family: $font-poppins;
+  border: transparent;
+  border-radius: 0.5rem;
+  &:hover {
+    cursor: pointer; 
+  }
+  width: 10rem;
+  text-wrap: nowrap;
+}
+li {
+  font-weight: $font-weight-normal;
+  font-size: $font-size-small;
+  line-height: $line-height-medium-small;
+  font-family: $font-poppins;
+}
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-hero-medium;
+    line-height: $line-height-hero-medium;
+  }
+  h2 {
+    font-size: $font-size-large;
+    line-height: $line-height-medium-large;
+  }
+  h4 {
+    font-size: $font-size-medium-small;
+    line-height: $line-height-large-body;
+  }
+  p {
+    font-size: $font-size-extra-small;
+    line-height: $line-height-body-small;
+  }
+  li {
+    font-size: $font-size-extra-small;
+    line-height: $line-height-body-small;
+  }
+}

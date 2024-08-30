@@ -1,0 +1,53 @@
+.trademark {
+  display: flex;
+  &__policy {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+
+    p {
+      font-weight: $font-weight-light;
+      font-size: $font-size-extra-small;
+      line-height: $line-height-extra-small;
+      font-family: var(--font-poppins);
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 0.875rem;
+      li {
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: $font-weight-light;
+        font-size: $font-size-extra-small;
+        line-height: $line-height-extra-small;
+        font-family: var(--font-poppins);
+      }
+    }
+  }
+
+  &__socials {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 0.938rem;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    &__policy {
+      justify-content: center;
+      ul {
+        display: none;
+      }
+    }
+
+    &__socials {
+      display: none;
+    }
+  }
+}
