@@ -10,7 +10,7 @@ const navbar = {
 };
 const hero = {
   headingsmall: { title: "Discover Authentic Mexican Flavors", color: "white" },
-  btn: { title: "Order Now", textcolor: "white", bgcolor: "red", link: "/" },
+  btn: { title: "Explore More", textcolor: "white", bgcolor: "red", link: "/" },
   paragraph: {
     title:
       "Discover the vibrant flavors and rich traditions of Mexican cuisine with our expertly crafted dishes. From zesty tacos and hearty burritos to sizzling fajitas and savory enchiladas, we bring the true taste of Mexico right to your table.",
